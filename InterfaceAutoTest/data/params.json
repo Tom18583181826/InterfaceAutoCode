@@ -1,0 +1,18 @@
+{
+  "params1": {
+    "city": "成都",
+    "key": "cbc8b17c015b1fbad7516fa1bea8fd1c"
+  },
+  "params2": {
+    "phone": 18687273467,
+    "dtype": "json",
+    "key": "0aa0fb6a1ac09dc87269fad672714ae0"
+  },
+  "params6": {
+    "sex": 1,
+    "role": 1,
+    "height": 168,
+    "weight": 50,
+    "key": "bbcde5d03b58cb3cc3b15b2614d7449c"
+  }
+}
