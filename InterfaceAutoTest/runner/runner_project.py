@@ -33,7 +33,7 @@ if __name__ == '__main__':
     # #     1.因为Allure基于java所以需要有jdk1.8+环境
     # #     2.下载Allure包，解压到指定目录下，将bin目录配置到环境变量中
     # #     3.在命令行工具中，输入(allure --version)，输出版本信息表示成功
-    # #     4.在Pycharm中安装allure_pytest库
+    # #     4.在Pycharm中安装allure-pytest库
     # #     5.在命令行工具/Pycharm的Terminal(需进入用例目录)/代码中，输入命令生成XML文件
     # #     ---pytest 用例模块 --alluredir XML格式文件目录
     # #     6.在命令行中输入命令，将XML格式文件转换成HTML格式文件
