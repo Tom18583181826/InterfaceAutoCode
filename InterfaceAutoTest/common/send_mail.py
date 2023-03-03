@@ -1,7 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from InterfaceAutoCode.InterfaceAutoTest.common.read_ini import ReadIni
+from InterfaceAutoTest.common.read_ini import ReadIni
 
 
 class SendMail(object):

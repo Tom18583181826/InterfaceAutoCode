@@ -4,7 +4,7 @@ import time
 import unittest
 # from HTMLTestRunner import HTMLTestRunner
 from BeautifulReport import BeautifulReport
-from InterfaceAutoCode.InterfaceAutoTest.common.read_ini import ReadIni
+from InterfaceAutoTest.common.read_ini import ReadIni
 
 # from InterfaceAutoTest.common.send_mail import SendMail
 

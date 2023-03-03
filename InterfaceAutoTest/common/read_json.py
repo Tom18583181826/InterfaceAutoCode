@@ -1,6 +1,6 @@
 import json
 
-from InterfaceAutoCode.InterfaceAutoTest.common.read_ini import ReadIni
+from InterfaceAutoTest.common.read_ini import ReadIni
 
 
 # 定义该方法读取--请求参数文件--和--预期结果文件--中的值

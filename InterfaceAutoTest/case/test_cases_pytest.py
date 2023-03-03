@@ -9,8 +9,8 @@ import pytest
 # 1.模块的命名以"test_"开头或"_test.py"结尾；
 # 2.类的命名以"Test"开头；
 # 3.测试用例的命名以"test"开头
-from InterfaceAutoCode.InterfaceAutoTest.common.read_excel import ReadExcel
-from InterfaceAutoCode.InterfaceAutoTest.common.get_json_value_by_key import GetJsonValue
+from InterfaceAutoTest.common.read_excel import ReadExcel
+from InterfaceAutoTest.common.get_json_value_by_key import GetJsonValue
 
 
 # 从excel表中获取测试数据,返回 @pytest.mark.parametrize装饰器需要的结构（列表）

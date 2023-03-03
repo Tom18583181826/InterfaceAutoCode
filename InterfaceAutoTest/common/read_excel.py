@@ -1,9 +1,9 @@
 import requests
 from openpyxl import load_workbook
 # openpyxl是Python中用于处理Excel表格的第三方类库
-from InterfaceAutoCode.InterfaceAutoTest.common.read_ini import ReadIni
-from InterfaceAutoCode.InterfaceAutoTest.common.read_json import read_json
-from InterfaceAutoCode.InterfaceAutoTest.data.excel_column import ExcelColumn
+from InterfaceAutoTest.common.read_ini import ReadIni
+from InterfaceAutoTest.common.read_json import read_json
+from InterfaceAutoTest.data.excel_column import ExcelColumn
 
 
 class ReadExcel:

@@ -5,8 +5,8 @@
 import re
 import requests
 import requests.packages.urllib3
-from InterfaceAutoCode.InterfaceAutoTest.common.read_excel import ReadExcel
-from InterfaceAutoCode.InterfaceAutoTest.common.get_json_value_by_key import GetJsonValue
+from InterfaceAutoTest.common.read_excel import ReadExcel
+from InterfaceAutoTest.common.get_json_value_by_key import GetJsonValue
 
 
 class RequestMethod:

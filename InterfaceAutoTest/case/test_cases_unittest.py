@@ -11,9 +11,9 @@ import warnings
 # 注：数据文件需要放在使用的.py文件的同一目录下，否则需要指定文件路径
 from parameterized import parameterized
 # parameterized是Python的一个参数化库，同时支持unittest,Nose,pytest单元测试框架
-from InterfaceAutoCode.InterfaceAutoTest.common.get_json_value_by_key import GetJsonValue
-from InterfaceAutoCode.InterfaceAutoTest.common.read_excel import ReadExcel
-from InterfaceAutoCode.InterfaceAutoTest.request_method.request_method import RequestMethod
+from InterfaceAutoTest.common.get_json_value_by_key import GetJsonValue
+from InterfaceAutoTest.common.read_excel import ReadExcel
+from InterfaceAutoTest.request_method.request_method import RequestMethod
 
 
 # 从excel表中获取测试数据,返回 @parameterized.expand装饰器需要的结构（列表）
