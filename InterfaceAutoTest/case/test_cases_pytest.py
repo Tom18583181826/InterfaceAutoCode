@@ -43,7 +43,7 @@ class TestCasesWithPytest:
         "case_id, case_name, method, url, if_execute, precondition_id, depend_key, pattern, expect, data_type, row",
         get_data())
     # @pytest.mark.parametrize("参数名", list, ids=None)
-    # 第一个参数为字符串，多个参数中间使用逗号隔开
+    # 第一个参数为字符串，多个参数中间使用逗号隔开，参数名要与用例函数或方法中的形参名保持一致
     # 第二个参数为列表，多组数据用元组类型。list的每个元素都是一个元组，元组里的每一个元素按参数顺序一一对应
     # ids参数默认为空，用于定义测试用例的名称，例如：ids=["case1", "case2", "case3"]
     # ----------------------------------------------------
@@ -95,6 +95,7 @@ if __name__ == '__main__':
     # -k 字符串:运行名称中包含某字符串的测试用例(pytest -k abc ---.py)
     # -q(--quiet):减少测试运行的冗长(pytest -q ---.py)
     # -x:如果出现一条测试用例失败，则退出测试(pytest -x ---.py)
+    # --maxfail=num:表示遇到num个用例执行失败或错误就停止
     # pytest 测试目录（可以是相对路径也可以是绝对路径）：运行测试目录（pytest ./test_dir）
     # pytest 测试模块::测试类::测试方法:指定特定类或方法执行(文件名，类名，方法名之间用::符号分隔)
 

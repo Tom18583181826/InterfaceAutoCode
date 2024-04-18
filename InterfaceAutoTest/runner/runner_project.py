@@ -22,6 +22,9 @@ if __name__ == '__main__':
     #              r"--html=E:\Python\InterfaceAutoCode\InterfaceAutoTest\result\pytest_html_report\report{}.html".format(
     #                  now),
     #              "--self-contained-html"])
+    #
+    # 参数说明：-vv:获取最详细的信息
+    #          --self-contained-html：生成的报告把html、css和图片等放到一个文件中
     # # --------------------------------------------------------------------------------------
 
     # #  --------------------------------------------------------------------------------------

@@ -62,6 +62,19 @@ class RequestMethod:
         # elapsed:获取响应的时间
         # encoding:获取响应的编码格式
 
+        # CookieJar对象：CookieJar是管理HTTP cookie值、存储HTTP请求生成的cookie、向发送的HTTP请求添加cookie的对象。
+        #               在Response对象中通过cookies属性获取CookieJar对象。一个CookieJar对象中可以保存多个cookie信息。
+        # cookie的几个要素：名称、值、域名、路径
+        # CookieJar对象的常用操作方法：
+        #           update():把一个cookie更新到另一个cookie中；
+        #           keys():获取所有cookie的key。以列表返回；
+        #           values():获取所有cookie的value,以列表返回；
+        #           items():获取所有cookie的key和value，以元组的列表返回；
+        #           get(key):根据key获取value;
+        #           pop(key)：根据key删除cookie;
+        #           list_domains():获取所有cookie的域名，以列表返回；
+        #           list_paths():获取所有cookie的路径，以列表返回。
+
     # 根据前置用例id获取前置用例的行号,传入参数为前置用例的id
     def get_precondition_row(self, precondition_id):
         for row in range(2, self.read_excel.get_row_count() + 1):

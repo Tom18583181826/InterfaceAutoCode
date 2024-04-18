@@ -67,6 +67,8 @@ class TestCasesWithUnittest(unittest.TestCase):
     # @data({},{},{})     参数化方式三：传入字典(注：字典的key与测试方法的参数要保持一致)
     # @unpack
     @parameterized.expand(get_data())
+    # parameterized模块提供了expand和parameterized_class两个装饰器,
+    # 前者实现对方法的参数化后者实现对测试类的参数化
     def test_all(self, case_id, case_name, method, url, if_execute, precondition_id, depend_key, pattern, expect,
                  data_type, row):
         """测试所有接口"""
