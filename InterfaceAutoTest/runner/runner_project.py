@@ -1,6 +1,6 @@
 import os.path
 import time
-# import pytest
+import pytest
 import unittest
 # from HTMLTestRunner import HTMLTestRunner
 from BeautifulReport import BeautifulReport
@@ -16,16 +16,16 @@ if __name__ == '__main__':
     read = ReadIni()
     report_path = read.get_report_file_path()
 
-    # # --------------------------------------------------------------------------------------
-    # # 使用pytest单元测试框架生成pytest_html测试报告(需要安装pytest拓展插件pytest_html)
-    # pytest.main([r"E:\Python\InterfaceAutoCode\InterfaceAutoTest\case\test_cases_pytest.py",
-    #              r"--html=E:\Python\InterfaceAutoCode\InterfaceAutoTest\result\pytest_html_report\report{}.html".format(
-    #                  now),
-    #              "--self-contained-html"])
-    #
+    # --------------------------------------------------------------------------------------
+    # 使用pytest单元测试框架生成pytest_html测试报告(需要安装pytest拓展插件pytest_html)
+    pytest.main([r"E:\Python\InterfaceAutoCode\InterfaceAutoTest\case\test_cases_pytest.py",
+                 r"--html=E:\Python\InterfaceAutoCode\InterfaceAutoTest\result\pytest_html_report\report{}.html".format(
+                     now),
+                 "--self-contained-html"])
+
     # 参数说明：-vv:获取最详细的信息
     #          --self-contained-html：生成的报告把html、css和图片等放到一个文件中
-    # # --------------------------------------------------------------------------------------
+    # --------------------------------------------------------------------------------------
 
     # #  --------------------------------------------------------------------------------------
     # # 使用pytest单元测试框架生成Allure测试报告
@@ -68,27 +68,27 @@ if __name__ == '__main__':
     # # 为了使其支持Python3环境，需要对其中的部分内容进行修改(实际改动行数会有差异需要百度解决)
     # # -----------------------------------------------------------------------------------
 
-    # -----------------------------------------------------------------------------
-    # 使用unittest单元测试框架生成BeautifulReport测试报告
-    base_path = os.path.dirname(os.getcwd())
-    # os.getcwd():得到当前工作目录，即当前python脚本工作的目录路径
-    # os.path.dirname():获取当前文件的父目录名称
-    # 测试用例目录
-    test_dir = os.path.join(base_path, r"case")
-    # 加载测试用例,匹配以unittest.py结尾的脚本文件
-    discover = unittest.defaultTestLoader.discover(test_dir, "*unittest.py")
-    # 实例化BeautifulReport模块
-    report = BeautifulReport(discover)
-    report.report(filename="report{}".format(now),
-                  description="使用BeautifulReport模板生成测试报告",
-                  report_dir=report_path,
-                  theme="theme_memories")
-    # Report API简介：
-    # BeautifulReport_report.report(filename="测试报告名称，如果不指定默认文件名为report.html",
-    #                        description="测试报告用例名称展示",
-    #                        report_dir="报告文件写入路径",
-    #                        theme="报告主题样式(theme_default, theme_cyan, theme_candy, theme_memories)")
-    # ---------------------------------------------------------------------------------
+    # # -----------------------------------------------------------------------------
+    # # 使用unittest单元测试框架生成BeautifulReport测试报告
+    # base_path = os.path.dirname(os.getcwd())
+    # # os.getcwd():得到当前工作目录，即当前python脚本工作的目录路径
+    # # os.path.dirname():获取当前文件的父目录名称
+    # # 测试用例目录
+    # test_dir = os.path.join(base_path, r"case")
+    # # 加载测试用例,匹配以unittest.py结尾的脚本文件
+    # discover = unittest.defaultTestLoader.discover(test_dir, "*unittest.py")
+    # # 实例化BeautifulReport模块
+    # report = BeautifulReport(discover)
+    # report.report(filename="report{}".format(now),
+    #               description="使用BeautifulReport模板生成测试报告",
+    #               report_dir=report_path,
+    #               theme="theme_memories")
+    # # Report API简介：
+    # # BeautifulReport_report.report(filename="测试报告名称，如果不指定默认文件名为report.html",
+    # #                        description="测试报告用例名称展示",
+    # #                        report_dir="报告文件写入路径",
+    # #                        theme="报告主题样式(theme_default, theme_cyan, theme_candy, theme_memories)")
+    # # ---------------------------------------------------------------------------------
 
     # # ---------------------------------------------------------------------------------------
     # # 发送邮件
