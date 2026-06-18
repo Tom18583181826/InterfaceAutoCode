@@ -73,6 +73,7 @@ class TestCasesWithPytest:
                     actual = GetJsonValue().get_json_value_by_key(actual, list(expect.keys())[0])
                     try:
                         assert list(expect.values())[0] in actual
+                        # assert:是调试专用的断言语句，常用于在开发阶段快速检查代码条件是否为真，条件不满足时直接抛出AssertionError异常并终止程序。
                     except AssertionError:
                         # print("预期结果是：%s" % dict(set(expect.items()) - set(actual.items())))
                         # print("实际结果是：%s" % dict(set(actual.items()) - set(expect.items())))
