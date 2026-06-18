@@ -77,6 +77,7 @@ class TestCasesWithPytest:
                         # print("预期结果是：%s" % dict(set(expect.items()) - set(actual.items())))
                         # print("实际结果是：%s" % dict(set(actual.items()) - set(expect.items())))
                         raise AssertionError
+                    # raise:用来主动抛出异常的关键字，当程序遇到无法正常继续执行的情况时，用它来中断执行并向上层传递错误信息。
                 elif data_type == "XML":
                     try:
                         assert expect in actual
